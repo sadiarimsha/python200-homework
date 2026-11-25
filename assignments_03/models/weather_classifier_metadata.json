@@ -1,0 +1,15 @@
+{
+  "python_version": "3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)]",
+  "sklearn_version": "1.9.1",
+  "feature_names": [
+    "temperature_2m_max",
+    "temperature_2m_min",
+    "precipitation_sum",
+    "wind_speed_10m_max"
+  ],
+  "label_rule": "good_for_running = 1 if 7 <= temperature_2m_max <= 26 and temperature_2m_min >= 0 and precipitation_sum < 3 and wind_speed_10m_max < 30, else 0",
+  "city": "Chicago, IL",
+  "model_type": "StandardScaler + KNeighborsClassifier (k=9)",
+  "test_accuracy": 0.8219,
+  "test_f1": 0.7719
+}
